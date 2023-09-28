@@ -4,12 +4,12 @@ import "../src/App.css";
 
 const AuthService = {
 login: (username, password) => {
-    // Autenticación, de solicitud al servidor
-    // para verificar las credenciales del usuario.
+    {/* Autenticación, de solicitud al servidor
+    para verificar las credenciales del usuario.*/}
     // Si la autenticación fue exitosa, mostrar un mensaje ingreso éxito.
     // En caso contrario, Usuario y/o Contraseña Errada .
     return new Promise((resolve, reject) => {
-      // en esta parte se prueba el servicio de autenticación exitosa o con error
+    // en esta parte se prueba el servicio de autenticación exitosa o con error
     if (username === 'juan' && password === 'sena2023') {
         resolve('Ingreso Exitoso');
     } else {
@@ -39,6 +39,7 @@ return (
     <h1>Registro e Inicio de Sesión</h1>
         <p>El servicio recibirá un usuario y una contraseña,<br/> si la autenticación es correcta saldrá un mensaje de autenticación satisfactoria <br/>en caso contrario debe devolver error en la autenticación.</p>
     <br/>
+    {/*se ingreso logo de la empresa en la cabecera de la pagina*/}
     <div>
         <img src={require("./imagenes/logo.png")}/>
     </div><br/>
